@@ -8,6 +8,8 @@ body{
     background-color: #52942c;
     font-family: Arial, sans-serif;
     padding-top: 80px;
+    display: flex;
+    flex-direction: column;
 }
 
 header{
@@ -84,11 +86,7 @@ footer{
     padding: 20px;
     text-align: center;
     width: 100%;
-}
-
-.footer{
-    bottom: 0;
-    position: fixed;
+    margin-top: auto;
 }
 
 /* conjuntos*/
