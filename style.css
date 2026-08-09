@@ -19,8 +19,7 @@ header{
     padding: 20px;
     text-align: center;
     width: 100%;
-    top: 0;
-    position: fixed;
+    margin-bottom: auto;
     z-index: 1000;
 }
 
