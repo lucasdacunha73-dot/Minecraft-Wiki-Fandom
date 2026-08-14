@@ -5,18 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curiosidades - Minecraft Wiki</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
 
     <header>
         <h1>Minecraft Wiki</h1>
-        <nav>
-            <a href="index.html">Início</a>
-            <a href="mods.html">Mods</a>
-            <a href="biomas.html">Biomas</a>
-            <a href="curiosidades.html">Curiosidades</a>
-            <a href="suporte.html">Suporte</a>
-        </nav>
+        <div class="div-botoes">
+                <a href="#" class="botao-menu-abrir" onclick="showSidebar()">☰</a>
+            </div>
+
+            <nav class="sidebar">
+                <a href="#" class="botao-menu" onclick="hideSidebar()">✕</a>
+           
+                <ul class="elementos-menu">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="mods.html">Mods</a></li>
+                    <li><a href="biomas.html">Biomas</a></li>
+                    <li><a href="curiosidades.html">Curiosidades</a></li>
+                    <li><a href="suporte.html">Suporte</a></li>
+                </ul>
+            </nav>
     </header>
 
     <main>
