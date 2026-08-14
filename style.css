@@ -296,6 +296,10 @@ footer{
     box-shadow: -5px 0 10px rgba(0, 0, 0, 0.3);
 }
 
+.sidebar a:hover{
+    color: #ffcc00;
+}
+
 .elementos-menu {
     list-style: none;
     padding: 0;
