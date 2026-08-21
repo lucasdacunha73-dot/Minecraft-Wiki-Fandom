@@ -103,47 +103,16 @@ footer{
     text-align: center;
 }
 
-.mod{
-    margin: 20px;
-    height: 350px;
-    width: 300px;
-    border: 2px solid white;
-    border-radius: 10px;
-    padding: 10px;
-    background-color: rgba(16, 43, 3, 0.5);
-    transition: background-color 0.3s, transform 0.3s;
-    text-align: left;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.mod:hover,
-.bioma:hover{
-    background-color: rgba(16, 43, 3, 0.8);
-}
-
-.mods p,
-.biomas p{
-    margin-bottom: 20px;
-    margin: 0
-}
-
 .blocos{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.mod a{
-    color: white;
-}
-
-.titulos h2,h3{
-    margin-bottom: 5px;
-    text-align: center;
-}
 
 .titulos p{
     margin-bottom: 20px;
+    text-align: center;
 }
 
 /* Explorar */
@@ -153,12 +122,6 @@ footer{
     padding: 20px;
     text-align: center;
     margin-top: 30px;
-}
-
-.categorias {
-    display: flex;
-    flex-wrap:wrap;
-    justify-content: center;
 }
 
 .categoria{
@@ -182,16 +145,31 @@ footer{
     transition: transform 0.3s;
 }
 
-.categoria img:hover{
+.categoria img:hover,
+.curiosidade:hover,
+.bioma:hover{
     transform: translateY(-5%);
 }
 
 /* Mods */
 .mod img{
     width:100%;
-    height:180px;
-    object-fit:cover;
-    border-radius: 10px;
+}
+
+.mod{
+    margin: 15px;
+    padding: 10px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: solid 5px rgb(214, 181, 73);
+    border-radius: 6px;
+    background-color: #1f1e1e;
+    color: white;
+    max-width: 300px;
+}
+
+.mod a{
+    color: white;
 }
 
 /* Biomas */
@@ -229,13 +207,13 @@ footer{
 
 .bioma:hover{
     background-color: rgb(243, 242, 242);
-    transform: translateY(-5%);
 }
 
 /* Curiosidades */
 .curiosidades{
     background-color: aliceblue;
 }
+
 .curiosidade{
     margin: 20px;
     border: 2px solid;
@@ -259,10 +237,6 @@ footer{
     display: flex;
     text-align: left;
     margin-bottom: 15px;
-}
-
-.curiosidade:hover{
-    transform: translateY(-5%);
 }
 
 /* Suporte */
@@ -292,7 +266,7 @@ footer{
 }
 
 .suporte a:hover{
-    color: #ffcc00;
+    color: white;
 }
 
 /* Menu */
