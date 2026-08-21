@@ -5,29 +5,32 @@
 }
 
 :root{
-    --cinza-escuro: #333;
+    --cinza-escuro: #1f1e1e;
 }
 
 body{
-    background-color: #52942c;
+    background-color: #76af55;
     font-family: Arial, sans-serif;
-    padding-top: 80px;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
 header{
-    background-color: var(--cinza-escuro);
-    color: white;
+    background-image: url(img/fundoheader.jpg);
     padding: 20px;
     text-align: center;
     width: 100%;
     top: 0;
-    position: fixed;
+    position: relative;
     z-index: 900;
     display: flex;
     justify-content: space-between;
+}
+
+header img{
+    width: 250px;
+    margin: 0 auto;
 }
 
 header a:hover{
@@ -55,7 +58,6 @@ header a:hover{
     text-align: center;
     font-size: 18px;
     margin-top: 20px;
-    color: white;
     padding: 0 60px;
 }
 
@@ -98,12 +100,10 @@ footer{
     max-width: 1200px;
     margin: auto;
     padding: 20px;
-    color: white;
     text-align: center;
 }
 
-.mod,
-.bioma{
+.mod{
     margin: 20px;
     height: 350px;
     width: 300px;
@@ -117,15 +117,12 @@ footer{
 }
 
 .mod:hover,
-.bioma:hover,
-.curiosidade:hover{
+.bioma:hover{
     background-color: rgba(16, 43, 3, 0.8);
-    transform: translateY(-5%);
 }
 
 .mods p,
-.biomas p,
-.curiosidades p{
+.biomas p{
     margin-bottom: 20px;
     margin: 0
 }
@@ -136,13 +133,13 @@ footer{
     flex-wrap: wrap;
 }
 
-.mod a,
-.bioma a{
+.mod a{
     color: white;
 }
 
 .titulos h2,h3{
     margin-bottom: 5px;
+    text-align: center;
 }
 
 .titulos p{
@@ -154,47 +151,26 @@ footer{
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-    color: white;
     text-align: center;
     margin-top: 30px;
 }
 
-.categorias{
-    text-align: center;
-    margin-top: 30px;
+.categorias {
     display: flex;
+    flex-wrap:wrap;
     justify-content: center;
-    flex-wrap: wrap;
 }
 
 .categoria{
     margin: 0 20px;
     margin-bottom: 30px;
-    height: 350px;
-    width: 200px;
-    text-align: center;
-    border: 2px solid white;
-    border-radius: 10px;
     padding: 10px;
-    display: block;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    background-color: rgba(16, 43, 3, 0.5);
-    transition: background-color 0.3s, transform 0.3s;
 }
 
-.categoria:hover{
-    background-color: rgba(16, 43, 3, 0.8);
-    transform: translateY(-5%);
-}
-
-.categoria button{
-    width: 150px;
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: white;
-    cursor: pointer;
-    border-radius: 5px;
-    margin-top: 5px;
+.categoria a{
+    text-decoration: none;
+    font-weight: 800;
+    color: var(--cinza-escuro);
 }
 
 .categoria img{
@@ -203,6 +179,11 @@ footer{
     margin-top: 10px;
     margin-bottom: 10px;
     border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.categoria img:hover{
+    transform: translateY(-5%);
 }
 
 /* Mods */
@@ -216,23 +197,72 @@ footer{
 /* Biomas */
 
 .bioma img{
-    width: 275px;
-    margin-top: 10px;
+    width: 180px;
     margin-bottom: 10px;
+    border-radius: 5px;
+    border: solid 10px rgb(138, 99, 40);
+}
+
+.biomas a{
+    color: black;
+}
+
+.bioma{
+    max-width: 200px;
+    margin: 10px;
+    border: 2px solid black;
     border-radius: 10px;
+    padding: 7px;
+    background-color: rgb(221, 221, 221);
+    transition: background-color 0.3s, transform 0.3s;
+    text-align: right;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.biomas p, h4{
+    text-align: left;
+}
+
+.biomas h4{
+    font-size: 20px;
+}
+
+.bioma:hover{
+    background-color: rgb(243, 242, 242);
+    transform: translateY(-5%);
 }
 
 /* Curiosidades */
+.curiosidades{
+    background-color: aliceblue;
+}
 .curiosidade{
-    margin: auto;
-    border: 2px solid white;
+    margin: 20px;
+    border: 2px solid;
     border-radius: 10px;
     padding: 10px;
-    background-color: rgba(16, 43, 3, 0.5);
-    transition: background-color 0.3s, transform 0.3s;
+    background-color: rgb(145, 143, 143);
+    transition: transform 0.3s;
     text-align: left;
     margin-bottom: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+}
+
+.curiosidade img{
+    width: 60px;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+
+.cima{
+    display: flex;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.curiosidade:hover{
+    transform: translateY(-5%);
 }
 
 /* Suporte */
@@ -240,7 +270,6 @@ footer{
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
-    color: white;
 }
 
 .suporte img{
@@ -257,7 +286,7 @@ footer{
 }
 
 .suporte a{
-    color: white;
+    color: black;
     text-decoration: none;
     transition: color 0.3s;
 }
@@ -289,7 +318,7 @@ footer{
     right: 0;
     width: 300px;
     height: 100vh;
-    background-color: var(--cinza-escuro);
+    background-color: rgba(20,20,20,0.95);
     display: none;
     flex-direction: column;
     z-index: 1000;
