@@ -70,25 +70,25 @@ header a:hover,
 
 /* Index */
 
-.index img {
+.index-pt1 img {
     width: 200px;
     display: block;
     margin: 40px auto;
     transition: transform .3s;
 }
 
-.index img:hover {
+.index-pt1 img:hover {
     transform: scale(1.1);
 }
 
-.index p {
+.index-pt1 p {
     text-align: center;
     font-size: 18px;
     margin-top: 20px;
     padding: 0 60px;
 }
 
-.index button {
+.index-pt1 button {
     display: block;
     margin: 30px auto;
     padding: 10px 20px;
@@ -99,10 +99,36 @@ header a:hover,
     transition: background .3s;
 }
 
-.index button:hover {
+.partes{
+    margin-bottom: 60px;
+    margin-top: 20px;
+}
+.index-pt1 button:hover {
     background: #f0cc3f;
     color: var(--cinza-escuro);
     border: 2px solid white;
+}
+
+.card{
+    text-align: center;
+    margin: 20px;
+    border-radius: 10px;
+    background-color: #629444;
+    padding: 15px;
+}
+
+.card a:hover{
+    color: var(--amarelo);
+}
+
+.card a{
+    color: var(--cinza-escuro);
+    transition: color 0.3;
+}
+
+.card img{
+    width: 100px;
+    margin-bottom: 10px;
 }
 
 /* Explorar */
@@ -122,7 +148,7 @@ header a:hover,
     color: var(--cinza-escuro);
 }
 
-.categoria img {
+.categoria img{
     width: 150px;
     height: 150px;
     margin: 10px 0;
