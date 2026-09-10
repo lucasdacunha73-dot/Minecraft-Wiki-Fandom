@@ -39,7 +39,8 @@ header img {
 }
 
 header a:hover,
-.sidebar a:hover {
+.sidebar a:hover,
+.card a:hover {
     color: var(--amarelo);
 }
 
@@ -74,7 +75,7 @@ header a:hover,
     width: 200px;
     display: block;
     margin: 40px auto;
-    transition: transform .3s;
+    transition: transform 0.8s;
 }
 
 .index-pt1 img:hover {
@@ -96,13 +97,14 @@ header a:hover,
     background: white;
     cursor: pointer;
     border-radius: 5px;
-    transition: background .3s;
+    transition: background-color 0.5s;
 }
 
 .partes{
     margin-bottom: 60px;
     margin-top: 20px;
 }
+
 .index-pt1 button:hover {
     background: #f0cc3f;
     color: var(--cinza-escuro);
@@ -117,13 +119,9 @@ header a:hover,
     padding: 15px;
 }
 
-.card a:hover{
-    color: var(--amarelo);
-}
-
 .card a{
     color: var(--cinza-escuro);
-    transition: color 0.3;
+    transition: color 0.3s;
 }
 
 .card img{
@@ -140,7 +138,7 @@ header a:hover,
 .categoria {
     margin: 0 20px 30px;
     padding: 10px;
-    transition: transform .3s;
+    transition: transform 0.3s;
 }
 
 .categoria a {
@@ -167,7 +165,7 @@ header a:hover,
 /* Mods */
 
 .mod {
-    width: 300px;
+    width: 200px;
     margin: 15px;
     padding: 10px;
     text-align: left;
@@ -197,7 +195,7 @@ header a:hover,
     border: 2px solid black;
     border-radius: 10px;
     text-align: right;
-    transition: .3s;
+    transition: transform 0.5s;
     box-shadow: 0 4px 8px #0003;
 }
 
@@ -241,7 +239,7 @@ header a:hover,
     border: 2px solid;
     border-radius: 10px;
     text-align: left;
-    transition: transform .3s;
+    transition: transform 0.3s;
     box-shadow: 0 4px 8px #0003;
 }
 
@@ -265,7 +263,7 @@ header a:hover,
 .suporte img {
     width: 100px;
     display: block;
-    margin: 40px 20px 40px auto;
+    margin: 40px 20px 40px;
 }
 
 .suporte article {
