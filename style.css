@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'Minecraft';
+    src: url('Minecraft.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -11,10 +18,11 @@
 
 body {
     background: #76af55;
-    font-family: Arial, sans-serif;
+    font-family: 'Minecraft', sans-serif;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    color: rgb(223, 217, 217);
 }
 
 a {
@@ -76,6 +84,7 @@ header a:hover,
     display: block;
     margin: 40px auto;
     transition: transform 0.8s;
+    cursor: pointer;
 }
 
 .index-pt1 img:hover {
@@ -94,7 +103,7 @@ header a:hover,
     margin: 30px auto;
     padding: 10px 20px;
     font-size: 16px;
-    background: white;
+    background-color: rgb(201, 198, 198);
     cursor: pointer;
     border-radius: 5px;
     transition: background-color 0.5s;
@@ -106,21 +115,21 @@ header a:hover,
 }
 
 .index-pt1 button:hover {
-    background: #f0cc3f;
-    color: var(--cinza-escuro);
-    border: 2px solid white;
+    background: #2f5809;
+    color: rgb(240, 236, 236);
+    border: 2px solid rgb(241, 239, 239);
 }
 
 .card{
     text-align: center;
     margin: 20px;
     border-radius: 10px;
-    background-color: #629444;
+    background-image: url(img/index/FundoCards.jfif);
     padding: 15px;
 }
 
 .card a{
-    color: var(--cinza-escuro);
+    color: rgb(223, 217, 217);;
     transition: color 0.3s;
 }
 
@@ -143,7 +152,7 @@ header a:hover,
 
 .categoria a {
     font-weight: 800;
-    color: var(--cinza-escuro);
+    color: rgb(190, 189, 189);
 }
 
 .categoria img{
@@ -169,7 +178,8 @@ header a:hover,
     margin: 15px;
     padding: 10px;
     text-align: left;
-    background: var(--cinza-escuro);
+    background-image: url(img/explorar/FundoExplorar.jfif);
+    background-size: 400px;
     color: white;
     border: 5px solid #d6b549;
     border-radius: 6px;
@@ -191,7 +201,8 @@ header a:hover,
     max-width: 200px;
     margin: 10px;
     padding: 7px;
-    background: #ddd;
+    background-image: url(img/biomas/FundoCard.jfif);
+    background-size: 100%;
     border: 2px solid black;
     border-radius: 10px;
     text-align: right;
@@ -200,7 +211,6 @@ header a:hover,
 }
 
 .bioma:hover {
-    background: #f3f2f2;
     transform: translateY(-5%);
 }
 
@@ -208,17 +218,18 @@ header a:hover,
     width: 180px;
     margin-bottom: 10px;
     border-radius: 5px;
-    border: 10px solid #8a6328;
+    border: 10px solid #695b2b;
 }
 
 .biomas a {
-    color: black;
+    color: rgb(223, 217, 217);
     text-decoration: underline;
 }
 
 .biomas p,
 .biomas h4 {
     text-align: left;
+    color: white;
 }
 
 .biomas h4 {
@@ -227,15 +238,11 @@ header a:hover,
 
 /* Curiosidades */
 
-.curiosidades {
-    background: aliceblue;
-}
-
 .curiosidade {
     max-width: 300px;
     margin: 20px;
     padding: 10px;
-    background: #918f8f;
+    background-image: url(img/curiosidades/FundoCard.jfif);
     border: 2px solid;
     border-radius: 10px;
     text-align: left;
@@ -272,7 +279,7 @@ header a:hover,
 }
 
 .suporte a {
-    color: black;
+    color: rgb(190, 189, 189);
 }
 
 .suporte a:hover {
@@ -329,4 +336,40 @@ footer {
     color: white;
     text-align: center;
     z-index: 900;
+}
+
+/* body's */
+
+.bodyindex{
+    background-image: url(img/index/FundoIndex.jfif);
+    background-color: rgba(36, 35, 35, 0.205);
+    background-blend-mode: darken;
+}
+
+.bodyexplorar{
+    background-image: url(img/explorar/FundoExplorar.jfif);
+    background-color: rgba(36, 35, 35, 0.205);
+    background-size: 400px;
+    background-blend-mode: darken;
+}
+
+.bodycuriosidades{
+    background-image: url(img/curiosidades/FundoCuriosidades.jfif);
+}
+
+.bodysuporte{
+    background-image: url(img/suporte/FundoSuporte.jfif);
+}
+
+.bodybiomas{
+    background-image: url(img/biomas/FundoBiomas.jfif);
+    background-color: rgba(36, 35, 35, 0.205);
+    background-blend-mode: darken;
+}
+
+.bodymods{
+    background-image: url(img/mods/FundoMods.jfif);
+    color: white;
+    background-color: rgba(36, 35, 35, 0.205);
+    background-blend-mode: darken;
 }
