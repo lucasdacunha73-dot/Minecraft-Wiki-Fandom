@@ -292,12 +292,12 @@ header a:hover,
 .botao-menu-abrir {
     color: white;
     cursor: pointer;
+    font-size: 28px;
 }
 
 .botao-menu {
     align-self: flex-start;
     margin: 25px;
-    font-size: 28px;
 }
 
 .sidebar {
