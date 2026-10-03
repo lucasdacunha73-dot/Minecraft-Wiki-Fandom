@@ -215,7 +215,7 @@ header a:hover,
 }
 
 .bioma img {
-    width: 180px;
+    width: 100%;
     margin-bottom: 10px;
     border-radius: 5px;
     border: 10px solid #695b2b;
@@ -372,4 +372,81 @@ footer {
     color: white;
     background-color: rgba(36, 35, 35, 0.205);
     background-blend-mode: darken;
+}
+
+@media(max-width: 960px) and (min-width: 420px) {
+    header,
+     footer, 
+     body,
+     .index-pt1 p,
+     .biomas h4{
+        font-size: 30px;
+    }
+
+    .card img{
+        width: 200px;
+    }
+
+    header img{
+        width: 400px;
+    }
+
+    .botao-menu,
+    .botao-menu-abrir {
+        font-size: 40px;
+    }
+
+    .sidebar{
+        width: 400px;
+    }
+
+    .elementos-menu li a{
+        font-size: 30px;
+    }
+
+    footer,
+    header{
+        padding: 40px;
+    }
+
+    .index-pt1 img {
+        width: 300px;
+    }
+
+    .index-pt1 button{
+        margin: 30px auto;
+        padding: 15px 25px;
+        font-size: 30px;
+    }
+
+    .categoria img{
+        width: 200px;
+        height: 200px;
+    }
+
+    .mod {
+        width: 400px;
+        margin: 20px;
+        padding: 15px;
+    }
+
+    .bioma {
+        max-width: 300px;
+        margin: 20px;
+        padding: 10px;
+    }
+
+    .curiosidade {
+        max-width: 400px;
+        margin: 20px;
+        padding: 10px;
+    }
+
+    .curiosidade img {
+        width: 70px;
+    }
+
+    .suporte img {
+        width: 150px;
+    }
 }
