@@ -374,7 +374,7 @@ footer {
     background-blend-mode: darken;
 }
 
-@media(max-width: 1020px) and (min-width: 420px) {
+@media(max-width: 1080px) and (min-width: 420px) {
     header,
      footer, 
      body,
